@@ -1,0 +1,323 @@
+[gd_scene load_steps=41 format=3 uid="uid://647kjmdprsuu"]
+
+[ext_resource type="Script" path="res://Scenes/Player/main_heroine.gd" id="1_ekpr1"]
+[ext_resource type="Texture2D" uid="uid://dflo87h2l5whh" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_1.png" id="2_7lmao"]
+[ext_resource type="Texture2D" uid="uid://8buajt20co8x" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_down/03_jump_down_1.png" id="2_n6ef3"]
+[ext_resource type="Texture2D" uid="uid://d2ebopyoruhsk" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_down/03_jump_down_2.png" id="3_5wlts"]
+[ext_resource type="Texture2D" uid="uid://bjf2t6e6ibaw7" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_2.png" id="3_wab5a"]
+[ext_resource type="Texture2D" uid="uid://c53uulife3a51" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_down/03_jump_down_3.png" id="4_5xj0i"]
+[ext_resource type="Texture2D" uid="uid://c6y12w4cmm4ep" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_3.png" id="4_dw2dk"]
+[ext_resource type="Texture2D" uid="uid://4gtyq54og3ql" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_4.png" id="5_mao1s"]
+[ext_resource type="Texture2D" uid="uid://da8wcytgodedf" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_5.png" id="6_bu52m"]
+[ext_resource type="Texture2D" uid="uid://cde4vxa4xw0is" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_6.png" id="7_pji35"]
+[ext_resource type="Texture2D" uid="uid://duxb37q5qu78n" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_7.png" id="8_7hjwk"]
+[ext_resource type="Texture2D" uid="uid://bu2vqmxtbhu1p" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_8.png" id="9_2cvh6"]
+[ext_resource type="Texture2D" uid="uid://cl85bhqth1j2y" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_1.png" id="10_vgijs"]
+[ext_resource type="Texture2D" uid="uid://c8f54gs6su8xf" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_2.png" id="11_wrxlt"]
+[ext_resource type="Texture2D" uid="uid://d3o8144xh0mi6" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_3.png" id="12_s6h2x"]
+[ext_resource type="Texture2D" uid="uid://dj0x58xt3fhvx" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_4.png" id="13_trg6u"]
+[ext_resource type="Texture2D" uid="uid://dcrjier7vwrep" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_5.png" id="14_430rc"]
+[ext_resource type="Texture2D" uid="uid://b7ceopqviwvl3" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_6.png" id="15_meu6p"]
+[ext_resource type="Texture2D" uid="uid://dl84kqjq6unpi" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_7.png" id="16_xlk4h"]
+[ext_resource type="Texture2D" uid="uid://bde4a87ms1cd2" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_8.png" id="17_16vja"]
+[ext_resource type="Texture2D" uid="uid://q03vmys81o7x" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_9.png" id="18_d5uk5"]
+[ext_resource type="Texture2D" uid="uid://0g1qd4h75lha" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_10.png" id="19_4eear"]
+[ext_resource type="Texture2D" uid="uid://dhosrjldx8ddb" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_1.png" id="30_h4iq8"]
+[ext_resource type="Texture2D" uid="uid://b3o4dcufld3w2" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_2.png" id="31_ramyj"]
+[ext_resource type="Texture2D" uid="uid://cf30p10cclb7l" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_3.png" id="32_52c4j"]
+[ext_resource type="Texture2D" uid="uid://btkaf46bg0dem" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_4.png" id="33_lcrx4"]
+[ext_resource type="Texture2D" uid="uid://c8tk1if31k756" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_5.png" id="34_e2jjg"]
+[ext_resource type="Texture2D" uid="uid://cq3w1lf4nb0rh" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_6.png" id="35_itc37"]
+[ext_resource type="Texture2D" uid="uid://isu8has6hwn7" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_7.png" id="36_onkok"]
+[ext_resource type="Texture2D" uid="uid://0sa1mqrkhs24" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_8.png" id="37_kwtyg"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="38_1i45q"]
+[ext_resource type="Resource" uid="uid://euybd2w0bax" path="res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera2DTween.tres" id="39_lvp0m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4t5p7"]
+radius = 14.0
+height = 46.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_842bi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n6ef3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5wlts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5xj0i")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7lmao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wab5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dw2dk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mao1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bu52m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pji35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7hjwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2cvh6")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_vgijs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wrxlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_s6h2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_trg6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_430rc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_meu6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xlk4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_16vja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_d5uk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_4eear")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_h4iq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ramyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_52c4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_lcrx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_e2jjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_itc37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_onkok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_kwtyg")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_udq2o"]
+resource_name = "Idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_g5rrr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_182oo"]
+resource_name = "Run"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Run"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_40cji"]
+resource_name = "Fall"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Fall"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_uk47v"]
+resource_name = "Jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Jump"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2d4fs"]
+_data = {
+"Fall": SubResource("Animation_40cji"),
+"Idle": SubResource("Animation_udq2o"),
+"Jump": SubResource("Animation_uk47v"),
+"RESET": SubResource("Animation_g5rrr"),
+"Run": SubResource("Animation_182oo")
+}
+
+[node name="mainHeroine" type="CharacterBody2D"]
+script = ExtResource("1_ekpr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 42)
+shape = SubResource("CapsuleShape2D_4t5p7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_842bi")
+animation = &"Run"
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2d4fs")
+}
+
+[node name="PlayerPhantomCamera2D" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(80, 0)
+script = ExtResource("38_1i45q")
+priority_override = false
+priority = 5
+zoom = Vector2(2.5, 2.5)
+follow_mode = 2
+follow_target = NodePath("..")
+follow_parameters/target_offset = Vector2(80, 0)
+follow_parameters/damping = true
+follow_parameters/damping_value = 5.0
+frame_preview = true
+pixel_perfect = false
+limit/draw_limits = true
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+limit/limit_node_target = NodePath("")
+limit/smoothed = false
+tween_parameters = ExtResource("39_lvp0m")
+tween_on_load = false
+inactive_update_mode = 0
