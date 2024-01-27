@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://647kjmdprsuu"]
+[gd_scene load_steps=49 format=3 uid="uid://647kjmdprsuu"]
 
 [ext_resource type="Script" path="res://Scenes/Player/main_heroine.gd" id="1_ekpr1"]
 [ext_resource type="Texture2D" uid="uid://dflo87h2l5whh" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_1.png" id="2_7lmao"]
@@ -22,6 +22,13 @@
 [ext_resource type="Texture2D" uid="uid://bde4a87ms1cd2" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_8.png" id="17_16vja"]
 [ext_resource type="Texture2D" uid="uid://q03vmys81o7x" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_9.png" id="18_d5uk5"]
 [ext_resource type="Texture2D" uid="uid://0g1qd4h75lha" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_10.png" id="19_4eear"]
+[ext_resource type="Texture2D" uid="uid://bl8cbv3132p7b" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_1.png" id="23_i5o3t"]
+[ext_resource type="Texture2D" uid="uid://mmhp660tvi0h" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_2.png" id="24_dxa3m"]
+[ext_resource type="Texture2D" uid="uid://c0p12w3hn27x8" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_3.png" id="25_xkj30"]
+[ext_resource type="Texture2D" uid="uid://b3o5uxlsxwtaq" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_4.png" id="26_0f5w0"]
+[ext_resource type="Texture2D" uid="uid://c7g1kbfltdum0" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_5.png" id="27_f3iux"]
+[ext_resource type="Texture2D" uid="uid://b7anh1ftj5yat" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_6.png" id="28_wqbxo"]
+[ext_resource type="Texture2D" uid="uid://dirwsfocff22l" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_7.png" id="29_uwi12"]
 [ext_resource type="Texture2D" uid="uid://dhosrjldx8ddb" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_1.png" id="30_h4iq8"]
 [ext_resource type="Texture2D" uid="uid://b3o4dcufld3w2" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_2.png" id="31_ramyj"]
 [ext_resource type="Texture2D" uid="uid://cf30p10cclb7l" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_3.png" id="32_52c4j"]
@@ -35,7 +42,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4t5p7"]
 radius = 14.0
-height = 46.0
+height = 42.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_842bi"]
 animations = [{
@@ -119,6 +126,32 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("23_i5o3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_dxa3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_xkj30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0f5w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_f3iux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_wqbxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_uwi12")
+}],
+"loop": false,
+"name": &"Roll",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("30_h4iq8")
 }, {
 "duration": 1.0,
@@ -147,8 +180,38 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_40cji"]
+resource_name = "Fall"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Fall"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
 [sub_resource type="Animation" id="Animation_udq2o"]
 resource_name = "Idle"
+length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -172,6 +235,33 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_uk47v"]
+resource_name = "Jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Jump"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 }
 
 [sub_resource type="Animation" id="Animation_g5rrr"]
@@ -217,8 +307,9 @@ tracks/1/keys = {
 "values": [0, 1, 2, 3, 4, 5, 6, 7]
 }
 
-[sub_resource type="Animation" id="Animation_40cji"]
-resource_name = "Fall"
+[sub_resource type="Animation" id="Animation_ro4nt"]
+resource_name = "Roll"
+length = 0.7
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -229,7 +320,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"Fall"]
+"values": [&"Roll"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -238,37 +329,10 @@ tracks/1/path = NodePath("AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2]
-}
-
-[sub_resource type="Animation" id="Animation_uk47v"]
-resource_name = "Jump"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"Jump"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+"values": [0, 1, 2, 3, 4, 5, 6]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2d4fs"]
@@ -277,6 +341,7 @@ _data = {
 "Idle": SubResource("Animation_udq2o"),
 "Jump": SubResource("Animation_uk47v"),
 "RESET": SubResource("Animation_g5rrr"),
+"Roll": SubResource("Animation_ro4nt"),
 "Run": SubResource("Animation_182oo")
 }
 
@@ -289,7 +354,7 @@ shape = SubResource("CapsuleShape2D_4t5p7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_842bi")
-animation = &"Run"
+animation = &"Roll"
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
