@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://dflss4gn1r0gx"]
+
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_bo77m"]
+[ext_resource type="Texture2D" uid="uid://dwl6wtxc6gg0s" path="res://Assets/Extra Assets/far city background/openingbg.png" id="2_v00h1"]
+[ext_resource type="Texture2D" uid="uid://cpe0501ossai6" path="res://Assets/Extra Assets/NPC/cat-frame1.png" id="3_3r0gn"]
+[ext_resource type="Texture2D" uid="uid://cn3gm3d872v8b" path="res://Assets/Extra Assets/NPC/cat-frame2.png" id="4_xrivl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w7xov"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3r0gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xrivl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xrivl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3r0gn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_bo77m")
+
+[node name="LevelHolder" type="Node2D" parent="."]
+
+[node name="MenuHolder" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(576, 325)
+scale = Vector2(1.9225, 1.62)
+texture = ExtResource("2_v00h1")
+
+[node name="CatNarrator" type="AnimatedSprite2D" parent="Background"]
+z_index = 1
+position = Vector2(-207.542, 38.2716)
+scale = Vector2(0.653398, 0.78444)
+sprite_frames = SubResource("SpriteFrames_w7xov")
+autoplay = "default"
+centered = false
