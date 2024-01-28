@@ -53,7 +53,10 @@ func _on_player_collision_body_shape_entered(body_rid, body, body_shape_index, l
 			#Game.playerHP -= DAMAGE
 			Death()
 	
-
+#func _on_player_death_body_entered(body):
+	#if body.name == "mainHeroine":
+		#Game.playerHP -= 3
+		#death()
 func Death():
 	Game.score += 5
 	Util.saveGame()

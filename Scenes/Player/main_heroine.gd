@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+#DELETE THIS: var health = 10
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
@@ -51,6 +51,10 @@ func _physics_process(delta):
 	move_and_slide()
 	update_animation()
 	update_facing_direction()
+
+#if Game.playerHP <= 0:
+#	queue_free()
+#	get_tree().change_scene_to_file("res://main.tscn")
 
 func update_animation():
 	if not animation_locked:
