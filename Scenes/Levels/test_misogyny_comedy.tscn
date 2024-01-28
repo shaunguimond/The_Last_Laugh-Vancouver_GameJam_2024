@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bqcmk0xatoie2"]
+[gd_scene load_steps=13 format=3 uid="uid://bqcmk0xatoie2"]
 
 [ext_resource type="Texture2D" uid="uid://vbb8vp3k5yf0" path="res://Assets/Extra Assets/kenney_platformer-art-deluxe/Buildings expansion/sheet.png" id="1_heo4v"]
 [ext_resource type="Shader" path="res://Scenes/Levels/test_misogyny_comedy.gdshader" id="1_nv3gn"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="3_jfy8i"]
 [ext_resource type="Texture2D" uid="uid://3frkso7pd5l" path="res://Assets/Extra Assets/free-city-backgrounds-pixel-art/city 2/10.png" id="4_21k80"]
 [ext_resource type="PackedScene" uid="uid://647kjmdprsuu" path="res://Scenes/Player/main_heroine.tscn" id="5_4e0ce"]
+[ext_resource type="PackedScene" uid="uid://u86ckky1ed2v" path="res://Scenes/Enemies/Rat/rat.tscn" id="7_o1qbn"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_m70nw"]
 shader = ExtResource("1_nv3gn")
@@ -9956,3 +9957,6 @@ centered = false
 
 [node name="mainHeroine" parent="." instance=ExtResource("5_4e0ce")]
 position = Vector2(167, 565)
+
+[node name="Rat" parent="." instance=ExtResource("7_o1qbn")]
+position = Vector2(414, 622)

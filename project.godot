@@ -28,6 +28,10 @@ display/window/size/borderless=false
 
 project/assembly_name="Platformer Template"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg")
+
 [input]
 
 move_left={
