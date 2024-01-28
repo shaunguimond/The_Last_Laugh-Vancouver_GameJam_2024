@@ -1,42 +1,8 @@
-[gd_scene load_steps=49 format=3 uid="uid://647kjmdprsuu"]
+[gd_scene load_steps=52 format=3 uid="uid://647kjmdprsuu"]
 
 [ext_resource type="Script" path="res://Scenes/Player/main_heroine.gd" id="1_ekpr1"]
-[ext_resource type="Texture2D" uid="uid://dflo87h2l5whh" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_1.png" id="2_7lmao"]
-[ext_resource type="Texture2D" uid="uid://8buajt20co8x" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_down/03_jump_down_1.png" id="2_n6ef3"]
-[ext_resource type="Texture2D" uid="uid://d2ebopyoruhsk" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_down/03_jump_down_2.png" id="3_5wlts"]
-[ext_resource type="Texture2D" uid="uid://bjf2t6e6ibaw7" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_2.png" id="3_wab5a"]
-[ext_resource type="Texture2D" uid="uid://c53uulife3a51" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_down/03_jump_down_3.png" id="4_5xj0i"]
-[ext_resource type="Texture2D" uid="uid://c6y12w4cmm4ep" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_3.png" id="4_dw2dk"]
-[ext_resource type="Texture2D" uid="uid://4gtyq54og3ql" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_4.png" id="5_mao1s"]
-[ext_resource type="Texture2D" uid="uid://da8wcytgodedf" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_5.png" id="6_bu52m"]
-[ext_resource type="Texture2D" uid="uid://cde4vxa4xw0is" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_6.png" id="7_pji35"]
-[ext_resource type="Texture2D" uid="uid://duxb37q5qu78n" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_7.png" id="8_7hjwk"]
-[ext_resource type="Texture2D" uid="uid://bu2vqmxtbhu1p" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_8.png" id="9_2cvh6"]
-[ext_resource type="Texture2D" uid="uid://cl85bhqth1j2y" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_1.png" id="10_vgijs"]
-[ext_resource type="Texture2D" uid="uid://c8f54gs6su8xf" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_2.png" id="11_wrxlt"]
-[ext_resource type="Texture2D" uid="uid://d3o8144xh0mi6" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_3.png" id="12_s6h2x"]
-[ext_resource type="Texture2D" uid="uid://dj0x58xt3fhvx" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_4.png" id="13_trg6u"]
-[ext_resource type="Texture2D" uid="uid://dcrjier7vwrep" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_5.png" id="14_430rc"]
-[ext_resource type="Texture2D" uid="uid://b7ceopqviwvl3" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_6.png" id="15_meu6p"]
-[ext_resource type="Texture2D" uid="uid://dl84kqjq6unpi" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_7.png" id="16_xlk4h"]
-[ext_resource type="Texture2D" uid="uid://bde4a87ms1cd2" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_8.png" id="17_16vja"]
-[ext_resource type="Texture2D" uid="uid://q03vmys81o7x" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_9.png" id="18_d5uk5"]
-[ext_resource type="Texture2D" uid="uid://0g1qd4h75lha" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/03_jump_full/03_jump_10.png" id="19_4eear"]
-[ext_resource type="Texture2D" uid="uid://bl8cbv3132p7b" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_1.png" id="23_i5o3t"]
-[ext_resource type="Texture2D" uid="uid://mmhp660tvi0h" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_2.png" id="24_dxa3m"]
-[ext_resource type="Texture2D" uid="uid://c0p12w3hn27x8" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_3.png" id="25_xkj30"]
-[ext_resource type="Texture2D" uid="uid://b3o5uxlsxwtaq" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_4.png" id="26_0f5w0"]
-[ext_resource type="Texture2D" uid="uid://c7g1kbfltdum0" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_5.png" id="27_f3iux"]
-[ext_resource type="Texture2D" uid="uid://b7anh1ftj5yat" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_6.png" id="28_wqbxo"]
-[ext_resource type="Texture2D" uid="uid://dirwsfocff22l" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/04_roll/04_roll_7.png" id="29_uwi12"]
-[ext_resource type="Texture2D" uid="uid://dhosrjldx8ddb" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_1.png" id="30_h4iq8"]
-[ext_resource type="Texture2D" uid="uid://b3o4dcufld3w2" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_2.png" id="31_ramyj"]
-[ext_resource type="Texture2D" uid="uid://cf30p10cclb7l" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_3.png" id="32_52c4j"]
-[ext_resource type="Texture2D" uid="uid://btkaf46bg0dem" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_4.png" id="33_lcrx4"]
-[ext_resource type="Texture2D" uid="uid://c8tk1if31k756" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_5.png" id="34_e2jjg"]
-[ext_resource type="Texture2D" uid="uid://cq3w1lf4nb0rh" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_6.png" id="35_itc37"]
-[ext_resource type="Texture2D" uid="uid://isu8has6hwn7" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_7.png" id="36_onkok"]
-[ext_resource type="Texture2D" uid="uid://0sa1mqrkhs24" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_8.png" id="37_kwtyg"]
+[ext_resource type="Texture2D" uid="uid://xf6x6gsyjhhi" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper/transparent.png" id="2_h54mq"]
+[ext_resource type="Texture2D" uid="uid://dkgv3nmf0122l" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper/transparent_roll.png" id="3_a47xh"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="38_1i45q"]
 [ext_resource type="Resource" uid="uid://euybd2w0bax" path="res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera2DTween.tres" id="39_lvp0m"]
 
@@ -44,17 +10,177 @@
 radius = 14.0
 height = 42.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_d50nf"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(8928, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njq27"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(9216, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0ams"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(9504, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4u4v1"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(9792, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyopl"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(10080, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea0y0"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(10368, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6f8y"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(10656, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2shp"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(0, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2qj4"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(288, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptcq2"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(576, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yffin"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(864, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oisx2"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(1152, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_chasf"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(1440, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_na3ck"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(1728, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ceah2"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(2016, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tcpv3"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(6624, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfiw1"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(6912, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlcmw"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(7200, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnu5q"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(7488, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c21lu"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(7776, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afw3m"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(8064, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ari7y"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(8352, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hr7rk"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(8640, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pd4hs"]
+atlas = ExtResource("3_a47xh")
+region = Rect2(0, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0k4j"]
+atlas = ExtResource("3_a47xh")
+region = Rect2(288, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rpkpq"]
+atlas = ExtResource("3_a47xh")
+region = Rect2(576, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxyfn"]
+atlas = ExtResource("3_a47xh")
+region = Rect2(864, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtsty"]
+atlas = ExtResource("3_a47xh")
+region = Rect2(1152, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u25ly"]
+atlas = ExtResource("3_a47xh")
+region = Rect2(1440, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52l1m"]
+atlas = ExtResource("3_a47xh")
+region = Rect2(1728, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36rw1"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(2304, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i71yu"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(2592, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aick7"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(2880, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vewjb"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(3168, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlwj1"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(3456, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c8n64"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(3744, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4y5cn"]
+atlas = ExtResource("2_h54mq")
+region = Rect2(4032, 0, 288, 128)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_842bi"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_n6ef3")
+"texture": SubResource("AtlasTexture_d50nf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_5wlts")
+"texture": SubResource("AtlasTexture_njq27")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_5xj0i")
+"texture": SubResource("AtlasTexture_w0ams")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4u4v1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyopl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ea0y0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6f8y")
 }],
 "loop": true,
 "name": &"Fall",
@@ -62,28 +188,28 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_7lmao")
+"texture": SubResource("AtlasTexture_g2shp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_wab5a")
+"texture": SubResource("AtlasTexture_t2qj4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_dw2dk")
+"texture": SubResource("AtlasTexture_ptcq2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_mao1s")
+"texture": SubResource("AtlasTexture_yffin")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_bu52m")
+"texture": SubResource("AtlasTexture_oisx2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_pji35")
+"texture": SubResource("AtlasTexture_chasf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_7hjwk")
+"texture": SubResource("AtlasTexture_na3ck")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_2cvh6")
+"texture": SubResource("AtlasTexture_ceah2")
 }],
 "loop": true,
 "name": &"Idle",
@@ -91,34 +217,28 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_vgijs")
+"texture": SubResource("AtlasTexture_tcpv3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_wrxlt")
+"texture": SubResource("AtlasTexture_tfiw1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_s6h2x")
+"texture": SubResource("AtlasTexture_dlcmw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_trg6u")
+"texture": SubResource("AtlasTexture_dnu5q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_430rc")
+"texture": SubResource("AtlasTexture_c21lu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_meu6p")
+"texture": SubResource("AtlasTexture_afw3m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_xlk4h")
+"texture": SubResource("AtlasTexture_ari7y")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_16vja")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_d5uk5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_4eear")
+"texture": SubResource("AtlasTexture_hr7rk")
 }],
 "loop": true,
 "name": &"Jump",
@@ -126,25 +246,25 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("23_i5o3t")
+"texture": SubResource("AtlasTexture_pd4hs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_dxa3m")
+"texture": SubResource("AtlasTexture_k0k4j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_xkj30")
+"texture": SubResource("AtlasTexture_rpkpq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_0f5w0")
+"texture": SubResource("AtlasTexture_rxyfn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_f3iux")
+"texture": SubResource("AtlasTexture_mtsty")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_wqbxo")
+"texture": SubResource("AtlasTexture_u25ly")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_uwi12")
+"texture": SubResource("AtlasTexture_52l1m")
 }],
 "loop": false,
 "name": &"Roll",
@@ -152,28 +272,25 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("30_h4iq8")
+"texture": SubResource("AtlasTexture_36rw1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_ramyj")
+"texture": SubResource("AtlasTexture_i71yu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_52c4j")
+"texture": SubResource("AtlasTexture_aick7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_lcrx4")
+"texture": SubResource("AtlasTexture_vewjb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_e2jjg")
+"texture": SubResource("AtlasTexture_mlwj1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_itc37")
+"texture": SubResource("AtlasTexture_c8n64")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_onkok")
-}, {
-"duration": 1.0,
-"texture": ExtResource("37_kwtyg")
+"texture": SubResource("AtlasTexture_4y5cn")
 }],
 "loop": true,
 "name": &"Run",
@@ -354,7 +471,7 @@ shape = SubResource("CapsuleShape2D_4t5p7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_842bi")
-animation = &"Fall"
+animation = &"Idle"
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

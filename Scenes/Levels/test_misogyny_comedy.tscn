@@ -9961,8 +9961,10 @@ centered = false
 [node name="mainHeroine" parent="." instance=ExtResource("5_4e0ce")]
 position = Vector2(167, 565)
 
-[node name="Rat" parent="." instance=ExtResource("7_o1qbn")]
+[node name="mobs" type="Node" parent="."]
+
+[node name="Rat" parent="mobs" instance=ExtResource("7_o1qbn")]
 position = Vector2(414, 622)
 
-[node name="Rooster" parent="." instance=ExtResource("10_qboqj")]
+[node name="Rooster" parent="mobs" instance=ExtResource("10_qboqj")]
 position = Vector2(995, 621)

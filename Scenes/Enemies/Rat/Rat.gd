@@ -15,7 +15,7 @@ func _physics_process(delta):
 	#Gravity for Rat
 	velocity.y += gravity * delta
 	if chase == true:
-		player = get_node("../mainHeroine")
+		player = get_node("../../mainHeroine")
 		var  direction = (player.position - self.position).normalized()
 		
 		if direction.x > 0:
