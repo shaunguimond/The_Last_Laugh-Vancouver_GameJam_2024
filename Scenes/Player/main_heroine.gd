@@ -47,14 +47,13 @@ func _physics_process(delta):
 		velocity.x = direction.x * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
 	move_and_slide()
 	update_animation()
 	update_facing_direction()
-
-#if Game.playerHP <= 0:
-#	queue_free()
-#	get_tree().change_scene_to_file("res://main.tscn")
+	
+	if Game.playerHP <= 0:
+		queue_free()
+		get_tree().change_scene_to_file("res://Scenes/UI/Menus/main_menu.tscn")
 
 func update_animation():
 	if not animation_locked:

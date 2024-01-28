@@ -8,11 +8,11 @@
 [sub_resource type="GDScript" id="GDScript_i1k67"]
 script/source = "extends Area2D
 
-var score = 0
+#var score = 0
 
 func _on_body_entered(body):
 	if body.name == \"mainHeroine\": 
-		score += 1
+		Game.score += 2
 		queue_free()
 "
 

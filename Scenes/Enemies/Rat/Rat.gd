@@ -47,18 +47,20 @@ func _on_player_death_body_shape_entered(body_rid, body, body_shape_index, local
 		Death()
 
 
-func _on_player_collision_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	if body.name == "mainHeroine":
-		if aliveStatus == true:
-			#Game.playerHP -= DAMAGE
-			Death()
-	
-#func _on_player_death_body_entered(body):
+#func _on_player_collision_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	#if body.name == "mainHeroine":
+		#if aliveStatus == true:
+			##Game.playerHP -= DAMAGE
+			#Game.score += 5
+			#Death()
+	
+func _on_player_death_body_entered(body):
+	if body.name == "mainHeroine":
 		#Game.playerHP -= 3
-		#death()
+		Game.score += 3
+		Death()
+		
 func Death():
-	Game.score += 5
 	Util.saveGame()
 	aliveStatus = false
 	#Game.Gold += 1
@@ -78,3 +80,11 @@ func Death():
 #
 #func _on_player_death_body_exited(body):
 	#pass # Replace with function body.
+
+
+func _on_player_collision_body_entered(body):
+	if body.name == "mainHeroine":
+		if aliveStatus == true:
+			#Game.playerHP -= DAMAGE
+			Game.playerHP -= 5
+			Death()

@@ -10002,10 +10002,10 @@ position = Vector2(306, 591)
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Hp" type="Label" parent="UI"]
-offset_left = 13.0
-offset_top = 226.0
-offset_right = 78.0
-offset_bottom = 273.0
+offset_left = 12.0
+offset_top = 59.0
+offset_right = 77.0
+offset_bottom = 106.0
 theme_override_colors/font_color = Color(0.937255, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
@@ -10014,9 +10014,9 @@ script = SubResource("GDScript_q6en6")
 
 [node name="Score" type="Label" parent="UI"]
 offset_left = 11.0
-offset_top = 249.0
+offset_top = 92.0
 offset_right = 76.0
-offset_bottom = 296.0
+offset_bottom = 139.0
 theme_override_colors/font_color = Color(0.937255, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
