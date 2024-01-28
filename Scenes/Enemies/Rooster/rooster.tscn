@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://ctadq5g74djdu"]
 
-[ext_resource type="Script" path="res://Scenes/Enemies/Rat/Rat.gd" id="1_pyvpt"]
+[ext_resource type="Script" path="res://Scenes/Enemies/Rooster/rooster.gd" id="1_lein0"]
 [ext_resource type="Texture2D" uid="uid://xw1jvkjuq8yi" path="res://Assets/Extra Assets/Enemies/Enemie Death/enemy-death-1 (Custom).png" id="2_c2qv8"]
 [ext_resource type="Texture2D" uid="uid://cpe03kdcu10e4" path="res://Assets/Extra Assets/Enemies/Enemie Death/enemy-death-2 (Custom).png" id="3_4ify6"]
 [ext_resource type="Texture2D" uid="uid://b566kap0rm6ox" path="res://Assets/Extra Assets/Enemies/Enemie Death/enemy-death-3 (Custom).png" id="4_7rpqk"]
@@ -50,21 +50,21 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2fi08"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_81tlx"]
 radius = 658.0
 height = 1316.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0u5y"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m0dy2"]
 size = Vector2(32, 19.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2c8lp"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njrsn"]
 size = Vector2(43, 15)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fwf4p"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmxh5"]
 size = Vector2(43, 36)
 
 [node name="Rooster" type="CharacterBody2D"]
-script = ExtResource("1_pyvpt")
+script = ExtResource("1_lein0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -81,25 +81,25 @@ animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerDetection"]
 visible = false
-shape = SubResource("CapsuleShape2D_2fi08")
+shape = SubResource("CapsuleShape2D_81tlx")
 
 [node name="playerDeath" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerDeath"]
 position = Vector2(-2, -17.25)
-shape = SubResource("RectangleShape2D_a0u5y")
+shape = SubResource("RectangleShape2D_m0dy2")
 
 [node name="playerCollision" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerCollision"]
 position = Vector2(-1.5, 0.5)
-shape = SubResource("RectangleShape2D_2c8lp")
+shape = SubResource("RectangleShape2D_njrsn")
 
 [node name="tomatoCollision" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tomatoCollision"]
 position = Vector2(-1.5, -10)
-shape = SubResource("RectangleShape2D_fwf4p")
+shape = SubResource("RectangleShape2D_lmxh5")
 
 [connection signal="body_entered" from="playerDetection" to="." method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="playerDetection" to="." method="_on_player_detection_body_exited"]
