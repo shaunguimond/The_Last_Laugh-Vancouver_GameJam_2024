@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b45sokqbkv2pn"
-path="res://.godot/imported/Roosterjump_2.png-71ec731aaf4ea856ee9044211b1d1dbf.ctex"
+uid="uid://bdjtkwp688r8y"
+path="res://.godot/imported/enemy-death-3 (Custom) (1).png-ea18fe89f4b4b2093bf406cd4210a187.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Extra Assets/Roosterjump_2.png"
-dest_files=["res://.godot/imported/Roosterjump_2.png-71ec731aaf4ea856ee9044211b1d1dbf.ctex"]
+source_file="res://Assets/Extra Assets/Enemies/Enemie Death/enemy-death-3 (Custom) (1).png"
+dest_files=["res://.godot/imported/enemy-death-3 (Custom) (1).png-ea18fe89f4b4b2093bf406cd4210a187.ctex"]
 
 [params]
 

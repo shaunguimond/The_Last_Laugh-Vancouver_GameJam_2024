@@ -30,14 +30,14 @@ func _physics_process(delta):
 		
 	if Input.is_action_just_pressed("roll"):
 		animation_locked = true
-		velocity.x = direction.x * SPEED * 20
+		velocity.x = direction.x * SPEED
 		#get_node("CollisionShape2D").set_scale(0.5)
 		anim.play("Roll")
 		await anim.animation_finished
 		animation_locked  = false
 		#get_node("CollisionShape2D").set_scale(1)
 		
-	
+
 	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

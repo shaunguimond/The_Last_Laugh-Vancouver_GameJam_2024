@@ -72,7 +72,7 @@ shape = SubResource("RectangleShape2D_0ymdb")
 position = Vector2(1.90735e-06, 0)
 scale = Vector2(0.111395, 0.111395)
 sprite_frames = SubResource("SpriteFrames_dau70")
-animation = &"Death"
+animation = &"Idle"
 
 [node name="playerDetection" type="Area2D" parent="."]
 
