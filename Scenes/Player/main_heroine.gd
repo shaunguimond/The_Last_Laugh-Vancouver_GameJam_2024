@@ -6,11 +6,44 @@ const JUMP_VELOCITY = -400.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-var _active_pcam: PhantomCamera2D
+#var _active_pcam: PhantomCamera2D
 @onready var anim = get_node("AnimationPlayer")
 var animation_locked = false
 var direction : Vector2 = Vector2.ZERO
 
+const Tomato = preload("res://Scenes/attack/tomato.tscn")
+
+
+func _process(_delta):
+	if Input.is_action_just_pressed("throw"):
+
+		throw()
+		
+
+		
+func throw():
+	var t = Tomato.instantiate()
+
+	var mouse_position = get_global_mouse_position()
+	var direction = (mouse_position - global_position).normalized()
+
+	t.velocity.y = t.initial_vertical_velocity * 4 * abs(sin(direction.angle() - 0.5))
+	t.velocity.x = t.initial_horiz_velocity * 4 * (cos(direction.angle())) + self.velocity.x
+
+	#t.velocity.x += self.velocity.x
+	
+	owner.add_child(t)
+	t.global_transform.origin = global_position	
+	
+
+	#velocity = direction * SPEED
+	#var vertical_velocity = initial_vertical_velocity * cos(min(90,direction.angle()))
+	#velocity.y = vertical_velocity
+	
+	#t.global_transform = $Muzzle.global_transform
+			
+		
+	
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -30,14 +63,17 @@ func _physics_process(delta):
 		
 	if Input.is_action_just_pressed("roll"):
 		animation_locked = true
-		velocity.x = direction.x * SPEED
+		velocity.x = direction.x * SPEED * 20
 		#get_node("CollisionShape2D").set_scale(0.5)
 		anim.play("Roll")
 		await anim.animation_finished
 		animation_locked  = false
 		#get_node("CollisionShape2D").set_scale(1)
+	
+	#if Input.is_action_just_pressed("throw"):
+			
 		
-
+	
 	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

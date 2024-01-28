@@ -1,14 +1,13 @@
-[gd_scene load_steps=15 format=3 uid="uid://bqcmk0xatoie2"]
+[gd_scene load_steps=14 format=3 uid="uid://bqcmk0xatoie2"]
 
 [ext_resource type="Texture2D" uid="uid://vbb8vp3k5yf0" path="res://Assets/Extra Assets/kenney_platformer-art-deluxe/Buildings expansion/sheet.png" id="1_heo4v"]
-[ext_resource type="Script" path="res://Scenes/Virtual/BaseLevel.gd" id="1_jk55x"]
 [ext_resource type="Shader" path="res://Scenes/Levels/test_misogyny_comedy.gdshader" id="1_nv3gn"]
 [ext_resource type="Texture2D" uid="uid://bpbhbulr1w0ue" path="res://Assets/Extra Assets/kenney_platformer-art-deluxe/Base pack/Tiles/tiles_spritesheet.png" id="2_gxiwq"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="3_jfy8i"]
 [ext_resource type="Texture2D" uid="uid://3frkso7pd5l" path="res://Assets/Extra Assets/free-city-backgrounds-pixel-art/city 2/10.png" id="4_21k80"]
 [ext_resource type="PackedScene" uid="uid://647kjmdprsuu" path="res://Scenes/Player/main_heroine.tscn" id="5_4e0ce"]
 [ext_resource type="PackedScene" uid="uid://u86ckky1ed2v" path="res://Scenes/Enemies/Rat/rat.tscn" id="7_o1qbn"]
-[ext_resource type="PackedScene" uid="uid://d07u6fod6jdo8" path="res://Scenes/Enemies/Rooster/rooster.tscn" id="8_5vxat"]
+[ext_resource type="PackedScene" uid="uid://ubm3g25m2mvs" path="res://Scenes/UI/level_ui.tscn" id="8_turaq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_m70nw"]
 shader = ExtResource("1_nv3gn")
@@ -9918,7 +9917,6 @@ sources/1 = SubResource("TileSetAtlasSource_ex6vm")
 shader = ExtResource("1_nv3gn")
 
 [node name="test_misogyny_comedy" type="Node2D"]
-script = ExtResource("1_jk55x")
 
 [node name="TileMap" type="TileMap" parent="."]
 material = SubResource("ShaderMaterial_m70nw")
@@ -9939,7 +9937,7 @@ layer_3/tile_data = PackedInt32Array(655374, 131072, 6, 720910, 131072, 7, 78644
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(247, 565)
-zoom = Vector2(2, 2)
+zoom = Vector2(2.5, 2.5)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D"]
 script = ExtResource("3_jfy8i")
@@ -9961,10 +9959,7 @@ centered = false
 [node name="mainHeroine" parent="." instance=ExtResource("5_4e0ce")]
 position = Vector2(167, 565)
 
-[node name="Mobs" type="Node" parent="."]
-
-[node name="Rat" parent="Mobs" instance=ExtResource("7_o1qbn")]
+[node name="Rat" parent="." instance=ExtResource("7_o1qbn")]
 position = Vector2(414, 622)
 
-[node name="Rooster" parent="Mobs" instance=ExtResource("8_5vxat")]
-position = Vector2(965, 614)
+[node name="LevelUI" parent="." instance=ExtResource("8_turaq")]

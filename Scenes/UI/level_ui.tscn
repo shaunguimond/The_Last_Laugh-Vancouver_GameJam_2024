@@ -30,7 +30,7 @@ size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="Control/HBoxContainer/HealthContainer"]
 layout_mode = 2
-text = "Health:"
+text = "CONFIDENCE:"
 horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/HBoxContainer/HealthContainer"]
@@ -65,6 +65,25 @@ text = "Score:"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="Control/HBoxContainer/ScoreContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_gqkha")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TomatoContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/TomatoContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Tomatoes Wasted:"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Control/HBoxContainer/TomatoContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("3_gqkha")

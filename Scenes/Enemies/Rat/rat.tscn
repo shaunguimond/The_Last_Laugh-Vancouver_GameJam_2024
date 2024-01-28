@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://u86ckky1ed2v"]
+[gd_scene load_steps=16 format=3 uid="uid://u86ckky1ed2v"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/Rat/Rat.gd" id="1_ik0ka"]
 [ext_resource type="Texture2D" uid="uid://vhc0cxjoaey1" path="res://Assets/Extra Assets/Enemies/Rat/rat-f1.png" id="2_j78jg"]
@@ -60,6 +60,9 @@ size = Vector2(41.5, 12.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2c8lp"]
 size = Vector2(50, 6)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83qfr"]
+size = Vector2(50, 19)
+
 [node name="Rat" type="CharacterBody2D"]
 script = ExtResource("1_ik0ka")
 
@@ -72,7 +75,7 @@ shape = SubResource("RectangleShape2D_0ymdb")
 position = Vector2(1.90735e-06, 0)
 scale = Vector2(0.111395, 0.111395)
 sprite_frames = SubResource("SpriteFrames_dau70")
-animation = &"Idle"
+animation = &"Death"
 
 [node name="playerDetection" type="Area2D" parent="."]
 
@@ -92,7 +95,14 @@ shape = SubResource("RectangleShape2D_a0u5y")
 position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_2c8lp")
 
+[node name="tomatoCollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tomatoCollision"]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_83qfr")
+
 [connection signal="body_entered" from="playerDetection" to="." method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="playerDetection" to="." method="_on_player_detection_body_exited"]
 [connection signal="body_shape_entered" from="playerDeath" to="." method="_on_player_death_body_shape_entered"]
 [connection signal="body_shape_entered" from="playerCollision" to="." method="_on_player_collision_body_shape_entered"]
+[connection signal="body_shape_entered" from="tomatoCollision" to="." method="_on_tomato_collision_body_shape_entered"]

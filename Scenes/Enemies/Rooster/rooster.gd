@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var SPEED = 75
+var SPEED = 50
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var player
 var chase = false
@@ -15,7 +15,7 @@ func _physics_process(delta):
 	#Gravity for Rat
 	velocity.y += gravity * delta
 	if chase == true:
-		player = get_node("../../mainHeroine")
+		player = get_node("../mainHeroine")
 		var  direction = (player.position - self.position).normalized()
 		
 		if direction.x > 0:

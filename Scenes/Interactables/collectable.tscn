@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://c1bq0xi4a0k6s"]
 
 [ext_resource type="PackedScene" uid="uid://u2fh1xedqj88" path="res://Scenes/Virtual/interactable.tscn" id="1_lnge0"]
-[ext_resource type="Texture2D" uid="uid://s3l5xq3ra512" path="res://Assets/Items/coinGold.png" id="2_0otk1"]
 [ext_resource type="Script" path="res://Scenes/Interactables/collectable.gd" id="2_mljyq"]
+[ext_resource type="Texture2D" uid="uid://bsyq4t0l0aed2" path="res://Assets/Items/Tomato.png" id="3_jtbdq"]
 
 [sub_resource type="Animation" id="Animation_siten"]
 resource_name = "Collected"
@@ -115,10 +115,13 @@ _data = {
 [node name="Collectable" groups=["collectable"] instance=ExtResource("1_lnge0")]
 script = ExtResource("2_mljyq")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+[node name="Sprite2D2" type="Sprite2D" parent="." index="0"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
 libraries = {
 "": SubResource("AnimationLibrary_y2d8m")
 }
 
-[node name="Sprite2D" type="Sprite2D" parent="." index="2"]
-texture = ExtResource("2_0otk1")
+[node name="Sprite2D" type="Sprite2D" parent="." index="3"]
+position = Vector2(0, -4)
+texture = ExtResource("3_jtbdq")
