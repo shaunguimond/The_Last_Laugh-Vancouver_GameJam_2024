@@ -5,6 +5,7 @@ class_name BaseLevel
 @onready var player_scene = preload("res://Scenes/Player/player.tscn")
 
 var levelscore = 0
+var ammo = 0
 var time_taken = 0
 var starting_pos : Vector2
 
@@ -44,7 +45,7 @@ func on_player_touched(node:Interactable):
 		activate_checkpoint(node)
 	elif node is Collectable:
 		node.collect()
-		update_score(100)
+		update_ammo()
 	elif node is DeathZone:
 		kill_player()
 
@@ -53,6 +54,10 @@ func on_player_touched(node:Interactable):
 func update_score(value):
 	levelscore += value
 	ui.update_score(levelscore)
+	
+func update_ammo():
+	ammo += 1
+	ui.update_ammo(ammo)	
 
 func reset_score():
 	levelscore = 0

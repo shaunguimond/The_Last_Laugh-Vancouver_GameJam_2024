@@ -56,6 +56,12 @@ func handle_gravity(delta):
 		delta *= 1.5
 	super(delta)
 
+
+#func handle_shoot():
+#	if Input.is_action_pressed("shootTomato"):
+		
+	
+
 func handle_physics(_delta):
 	if is_on_floor():
 		jumping = false

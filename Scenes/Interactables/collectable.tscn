@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://c1bq0xi4a0k6s"]
 
 [ext_resource type="PackedScene" uid="uid://u2fh1xedqj88" path="res://Scenes/Virtual/interactable.tscn" id="1_lnge0"]
-[ext_resource type="Texture2D" uid="uid://s3l5xq3ra512" path="res://Assets/Items/coinGold.png" id="2_0otk1"]
 [ext_resource type="Script" path="res://Scenes/Interactables/collectable.gd" id="2_mljyq"]
+[ext_resource type="Texture2D" uid="uid://b822emxwj7wev" path="res://Assets/Items/Tomato.png" id="3_j5y25"]
 
 [sub_resource type="Animation" id="Animation_siten"]
 resource_name = "Collected"
@@ -41,18 +41,6 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprite2D:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(0.1, 0.1)]
 }
 
 [sub_resource type="Animation" id="Animation_ihats"]
@@ -93,18 +81,6 @@ tracks/2/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprite2D:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_y2d8m"]
 _data = {
@@ -120,5 +96,7 @@ libraries = {
 "": SubResource("AnimationLibrary_y2d8m")
 }
 
-[node name="Sprite2D" type="Sprite2D" parent="." index="2"]
-texture = ExtResource("2_0otk1")
+[node name="Sprite2D2" type="Sprite2D" parent="." index="2"]
+position = Vector2(0, -5)
+scale = Vector2(1.78125, 1.78125)
+texture = ExtResource("3_j5y25")
