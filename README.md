@@ -21,12 +21,15 @@
 
 | | Bachelor of Computer Science Students |
 | --- | --- |
-| Shaun | Boosting Noobs Since 2024 Leader :sunglasses: |
-| Fred | Tomato Throwing Clutch Coder :tomato: |
-| Hedie | Pixel Perfect Perspective Protraiture :paintbrush: |
-| Helena | Bigger is Better Background Level Designer :mag: | 
-| Rachelle | Witty Writer of One Liners :open_book: |
-| Annie | Git Good Asset Animator :art: |
+| Shaun (@shaunguimond) | Boosting Noobs Since 2024 Leader :sunglasses: |
+| Fred (@fsunstrum) | Tomato Throwing Clutch Coder :tomato: |
+| Hedie (@mistysky04) | Pixel Perfect Perspective Protraiture :paintbrush: |
+| Helena (@hesoru) | Bigger is Better Background Level Designer :mag: | 
+| Rachelle (@chellexra) | Witty Writer of One Liners :open_book: |
+| Annie (@ayqya) | Git Good Asset Animator :art: |
+
+### Lights, Camera, Applaud the Artist: 
+A standing ovation to [Hellpug](https://www.instagram.com/hellpug/), from [Pixel Route](https://www.linkedin.com/company/pixelroute/about/), for her beautiful rendition of our titular antagonist, Ratt Rofe, and the roosters with the roasts. 
 
 </br>
 </br>
