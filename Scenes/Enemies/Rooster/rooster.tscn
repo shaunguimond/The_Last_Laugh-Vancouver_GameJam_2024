@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://bxqyr6hgr86rf" path="res://Assets/Extra Assets/Enemies/Enemie Death/enemy-death-4 (Custom).png" id="5_wqejt"]
 [ext_resource type="Texture2D" uid="uid://bid14027xr67" path="res://Assets/Extra Assets/Enemies/Enemie Death/enemy-death-5 (Custom).png" id="6_ugxua"]
 [ext_resource type="Texture2D" uid="uid://dw31h1m5ya1la" path="res://Assets/Extra Assets/Enemies/Enemie Death/enemy-death-6 (Custom).png" id="7_37w1n"]
-[ext_resource type="Texture2D" uid="uid://vhc0cxjoaey1" path="res://Assets/Extra Assets/Enemies/Rat/rat-f1.png" id="8_ey1y5"]
-[ext_resource type="Texture2D" uid="uid://bkjtm1vt8n1uf" path="res://Assets/Extra Assets/Enemies/Rat/rat-f2.png" id="9_1082s"]
+[ext_resource type="Texture2D" uid="uid://cmqsaa5kxsbkh" path="res://Assets/Extra Assets/Roosterjump_1-1.png" id="8_m5hre"]
+[ext_resource type="Texture2D" uid="uid://b45sokqbkv2pn" path="res://Assets/Extra Assets/Roosterjump_2.png" id="9_hp351"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0ymdb"]
 size = Vector2(43, 16)
@@ -40,10 +40,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_ey1y5")
+"texture": ExtResource("8_m5hre")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_1082s")
+"texture": ExtResource("9_hp351")
 }],
 "loop": true,
 "name": &"Idle",
@@ -55,10 +55,10 @@ radius = 658.0
 height = 1316.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a0u5y"]
-size = Vector2(41.5, 12.5)
+size = Vector2(32, 19.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2c8lp"]
-size = Vector2(50, 6)
+size = Vector2(43, 15)
 
 [node name="Rooster" type="CharacterBody2D"]
 script = ExtResource("1_pyvpt")
@@ -69,10 +69,10 @@ position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_0ymdb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1.90735e-06, 0)
-scale = Vector2(0.111395, 0.111395)
+position = Vector2(-4.22445, -10.2244)
+scale = Vector2(0.0493765, 0.0493765)
 sprite_frames = SubResource("SpriteFrames_dau70")
-animation = &"Death"
+animation = &"Idle"
 
 [node name="playerDetection" type="Area2D" parent="."]
 
@@ -83,13 +83,13 @@ shape = SubResource("CapsuleShape2D_2fi08")
 [node name="playerDeath" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerDeath"]
-position = Vector2(-0.75, -4.75)
+position = Vector2(-2, -17.25)
 shape = SubResource("RectangleShape2D_a0u5y")
 
 [node name="playerCollision" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerCollision"]
-position = Vector2(0, 5)
+position = Vector2(-1.5, 0.5)
 shape = SubResource("RectangleShape2D_2c8lp")
 
 [connection signal="body_entered" from="playerDetection" to="." method="_on_player_detection_body_entered"]

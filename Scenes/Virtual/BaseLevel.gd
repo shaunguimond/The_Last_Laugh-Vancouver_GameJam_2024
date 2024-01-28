@@ -19,24 +19,24 @@ var current_checkpoint:Checkpoint
 signal level_ended
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	var cell_size :Vector2i = $TileMap.tile_set.tile_size
-	boundry_rect = Rect2i($TileMap.get_used_rect()).abs()
-#	boundry_rect = boundry_rect.grow_side(SIDE_TOP, 500)
-	boundry_rect.size *= cell_size
-	boundry_rect.position *= cell_size
-	after_ready.call_deferred()
+#func _ready():
+	#var cell_size :Vector2i = $TileMap.tile_set.tile_size
+	#boundry_rect = Rect2i($TileMap.get_used_rect()).abs()
+##	boundry_rect = boundry_rect.grow_side(SIDE_TOP, 500)
+	#boundry_rect.size *= cell_size
+	#boundry_rect.position *= cell_size
+	#after_ready.call_deferred()
 
 func _process(delta):
 	time_taken += delta
 	ui.update_time(time_taken)
 	
-
-func after_ready():
-	#As the player is added to the tilemap, it needs to wait a frame for 
-	#everything to get ready!
-	player.set_up_camera_limit(boundry_rect)
-	starting_pos = player.position
+#
+#func after_ready():
+	##As the player is added to the tilemap, it needs to wait a frame for 
+	##everything to get ready!
+	#player.set_up_camera_limit(boundry_rect)
+	#starting_pos = player.position
 
 func on_player_touched(node:Interactable):
 	if node is Exit:

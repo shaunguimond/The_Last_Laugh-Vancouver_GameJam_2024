@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bqcmk0xatoie2"]
+[gd_scene load_steps=16 format=3 uid="uid://bqcmk0xatoie2"]
 
 [ext_resource type="Script" path="res://Scenes/Virtual/BaseLevel.gd" id="1_7eokq"]
 [ext_resource type="Texture2D" uid="uid://vbb8vp3k5yf0" path="res://Assets/Extra Assets/kenney_platformer-art-deluxe/Buildings expansion/sheet.png" id="1_heo4v"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://647kjmdprsuu" path="res://Scenes/Player/main_heroine.tscn" id="5_4e0ce"]
 [ext_resource type="PackedScene" uid="uid://u86ckky1ed2v" path="res://Scenes/Enemies/Rat/rat.tscn" id="7_o1qbn"]
 [ext_resource type="PackedScene" uid="uid://ubm3g25m2mvs" path="res://Scenes/UI/level_ui.tscn" id="8_turaq"]
+[ext_resource type="PackedScene" uid="uid://ctadq5g74djdu" path="res://Scenes/Enemies/Rooster/rooster.tscn" id="10_qboqj"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_m70nw"]
 shader = ExtResource("1_nv3gn")
@@ -9965,3 +9966,6 @@ position = Vector2(167, 565)
 position = Vector2(414, 622)
 
 [node name="LevelUI" parent="." instance=ExtResource("8_turaq")]
+
+[node name="Rooster" parent="." instance=ExtResource("10_qboqj")]
+position = Vector2(995, 621)
