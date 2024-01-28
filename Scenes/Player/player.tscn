@@ -100,10 +100,10 @@ _data = {
 collision_layer = 10
 collision_mask = 15
 script = ExtResource("2_5gwpl")
-coyote_time_frames = 6
-jump_time_frames = 6
-friction = 0.428
-acceleration = 0.715
+coyote_time_frames = 1
+jump_time_frames = 1
+friction = 1.0
+acceleration = 1.0
 jump_height = 175
 
 [node name="CollisionShape2D" parent="." index="0"]

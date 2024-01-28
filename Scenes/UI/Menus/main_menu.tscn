@@ -55,5 +55,11 @@ text = "Play"
 layout_mode = 2
 text = "Level Select"
 
+[node name="Options" type="Button" parent="Panel/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Options"
+
 [connection signal="pressed" from="Panel/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/LevelSelect" to="." method="_on_level_select_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Options" to="." method="_on_options_pressed"]

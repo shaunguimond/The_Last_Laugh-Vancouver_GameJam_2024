@@ -4,11 +4,14 @@ var current_scene : Node
 
 @onready var level_select_scene = preload("res://Scenes/UI/Menus/level_select.tscn")
 @onready var main_menu_scene = preload("res://Scenes/UI/Menus/main_menu.tscn")
+#@onready var options_scene = preload("res://Scenes/UI/Menus/options.tscn")
 
 @onready var levels = preload("res://Resources/level_collection.tres")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	#Util.saveGame()
+	Util.loadGame()
 	change_to_main_menu()
 	pass # Replace with function body.
 
@@ -33,9 +36,22 @@ func change_to_level_selection():
 	change_to_menu(scene)
 	scene.level_selected.connect(change_to_level)
 	scene.add_all_levels(levels)
+	
+	
+#Options 
+#
+#func change_to_options():
+	#var options = options_scene.instantiate()
+	#change_to_menu(options)
+
 
 func change_to_main_menu():
 	var menu = main_menu_scene.instantiate()
 	change_to_menu(menu)
 	menu.play_pressed.connect(change_to_level.bind(levels.get_current_level()))
 	menu.level_select_pressed.connect(change_to_level_selection)
+	#menu.options_pressed.connect(change_to_options)
+
+
+
+
