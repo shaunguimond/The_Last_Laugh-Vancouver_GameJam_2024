@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://b0guix78crhc2"]
+
+[ext_resource type="Texture2D" uid="uid://bsyq4t0l0aed2" path="res://Assets/Items/Tomato.png" id="1_27vhn"]
+[ext_resource type="Script" path="res://Scenes/attack/tomato.gd" id="1_fa1l3"]
+[ext_resource type="Texture2D" uid="uid://bnqtxll0amwcx" path="res://Assets/Items/Tomato_Splat(1).png" id="2_12cx0"]
+[ext_resource type="Texture2D" uid="uid://bbyrm5vyb4rw" path="res://Assets/Items/Tomato_Splat(2).png" id="3_02872"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7c703"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k4tvm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5l3qi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_27vhn")
+}],
+"loop": true,
+"name": &"intact",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.1,
+"texture": ExtResource("1_27vhn")
+}, {
+"duration": 0.5,
+"texture": ExtResource("2_12cx0")
+}, {
+"duration": 0.6,
+"texture": ExtResource("3_02872")
+}],
+"loop": false,
+"name": &"splat",
+"speed": 5.0
+}]
+
+[node name="Tomato" type="CharacterBody2D"]
+script = ExtResource("1_fa1l3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_7c703")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_k4tvm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -4)
+scale = Vector2(0.703125, 0.703125)
+sprite_frames = SubResource("SpriteFrames_5l3qi")
+animation = &"splat"
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(25, 0)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
