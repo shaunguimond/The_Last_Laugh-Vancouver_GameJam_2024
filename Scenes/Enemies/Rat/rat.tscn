@@ -61,7 +61,7 @@ size = Vector2(41.5, 12.5)
 size = Vector2(50, 6)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_83qfr"]
-size = Vector2(50, 19)
+size = Vector2(50, 21)
 
 [node name="Rat" type="CharacterBody2D"]
 script = ExtResource("1_ik0ka")

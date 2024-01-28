@@ -15,7 +15,7 @@ func _physics_process(delta):
 	#Gravity for Rat
 	velocity.y += gravity * delta
 	if chase == true:
-		player = get_node("../mainHeroine")
+		player = get_node("../../mainHeroine")
 		var  direction = (player.position - self.position).normalized()
 		
 		if direction.x > 0:
@@ -73,3 +73,10 @@ func Death():
 #
 #func _on_player_death_body_exited(body):
 	#pass # Replace with function body.
+
+
+func _on_tomato_collision_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	if body.name == "Tomato":
+		if aliveStatus == true:
+			#Game.playerHP -= DAMAGE
+			Death()		
