@@ -44,13 +44,14 @@ func _on_player_detection_body_exited(body):
 
 func _on_player_death_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "mainHeroine":
+		Game.score += 3
 		Death()
 
 
 func _on_player_collision_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "mainHeroine":
 		if aliveStatus == true:
-			#Game.playerHP -= DAMAGE
+			Game.playerHP -= DAMAGE
 			Death()
 	
 
@@ -69,7 +70,7 @@ func Death():
 func _on_tomato_collision_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Tomato":
 		if aliveStatus == true:
-			#Game.playerHP -= DAMAGE
+			Game.score += 3
 			Death()		
 	
 # Replace with function body.

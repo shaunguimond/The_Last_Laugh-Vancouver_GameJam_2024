@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="LevelCollectionResource" load_steps=6 format=3 uid="uid://cp8wrxwjud0b1"]
+[gd_resource type="Resource" script_class="LevelCollectionResource" load_steps=7 format=3 uid="uid://cp8wrxwjud0b1"]
 
+[ext_resource type="PackedScene" uid="uid://dg7bd77sfhq8v" path="res://Scenes/OpeningScene.tscn" id="1_75dmp"]
 [ext_resource type="Script" path="res://Resources/Scripts/level_collection.gd" id="1_hkkd7"]
 [ext_resource type="Script" path="res://Resources/Scripts/level_resource.gd" id="2_c5tna"]
 [ext_resource type="PackedScene" uid="uid://bs7q0kktp1gi0" path="res://Scenes/Levels/test_misogyny_comedy_helena.tscn" id="3_xjpro"]
@@ -7,7 +8,7 @@
 [sub_resource type="Resource" id="Resource_bunti"]
 script = ExtResource("2_c5tna")
 level_name = "Plot Scene"
-level_scene = ExtResource("3_xjpro")
+level_scene = ExtResource("1_75dmp")
 
 [sub_resource type="Resource" id="Resource_805xo"]
 script = ExtResource("2_c5tna")

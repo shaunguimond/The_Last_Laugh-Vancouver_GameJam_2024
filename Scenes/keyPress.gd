@@ -17,7 +17,7 @@ func _ready():
 func display_sentence():
 	# Set the text of the Label to the current sentence
 	if currentSentenceIndex == 4:
-		get_tree().change_scene_to_file("res://Scenes/Levels/test_misogyny_comedy.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Levels/test_misogyny_comedy_helena.tscn")
 	else:
 		labelNode.text = sentences[currentSentenceIndex]
 

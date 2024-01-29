@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://sficj7q6lmhf"]
+
+[ext_resource type="Script" path="res://Collectable/tomato_collectible.gd" id="1_r5qht"]
+[ext_resource type="Texture2D" uid="uid://bsyq4t0l0aed2" path="res://Assets/Items/Tomato.png" id="2_gflky"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cveub"]
+height = 20.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ckosn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gflky")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="TomatoCollectible" type="Area2D"]
+script = ExtResource("1_r5qht")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_cveub")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.40625, 0.40625)
+sprite_frames = SubResource("SpriteFrames_ckosn")
+animation = &"Idle"
+autoplay = "Idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://d1mf7ykum8kmp"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/RattRofe/ratt_rofe.gd" id="1_5fmtk"]
+[ext_resource type="Texture2D" uid="uid://ceojkhqvksh6p" path="res://Assets/Extra Assets/Helena_MattRife.png" id="1_hevi7"]
+[ext_resource type="Texture2D" uid="uid://dieebkp0rnasv" path="res://Assets/Extra Assets/Helena_MattRifeShirtlessMode.png" id="3_mgrdg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2csgt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ims0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hevi7")
+}],
+"loop": true,
+"name": &"Idleover50",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_mgrdg")
+}],
+"loop": true,
+"name": &"Idleunder50",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a4i61"]
+radius = 1016.1
+height = 2032.2
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0oark"]
+radius = 54.0
+height = 240.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gh512"]
+radius = 52.0
+height = 242.0
+
+[node name="RattRofe" type="CharacterBody2D"]
+script = ExtResource("1_5fmtk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_2csgt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4.76837e-07, -1)
+scale = Vector2(0.221759, 0.221759)
+sprite_frames = SubResource("SpriteFrames_7ims0")
+animation = &"Idleunder50"
+
+[node name="playerDetection" type="Area2D" parent="."]
+rotation = -0.523599
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="playerDetection"]
+shape = SubResource("CapsuleShape2D_a4i61")
+
+[node name="playerDamage" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="playerDamage"]
+shape = SubResource("CapsuleShape2D_0oark")
+
+[node name="playerCollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="playerCollision"]
+shape = SubResource("CapsuleShape2D_gh512")
+
+[connection signal="body_entered" from="playerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="playerDetection" to="." method="_on_player_detection_body_exited"]
+[connection signal="body_shape_entered" from="playerDamage" to="." method="_on_player_damage_body_shape_entered"]
+[connection signal="body_shape_entered" from="playerCollision" to="." method="_on_player_collision_body_shape_entered"]

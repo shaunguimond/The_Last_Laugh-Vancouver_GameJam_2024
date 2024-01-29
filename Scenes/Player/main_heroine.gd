@@ -16,8 +16,9 @@ const Tomato = preload("res://Scenes/attack/tomato.tscn")
 
 func _process(_delta):
 	if Input.is_action_just_pressed("throw"):
-
-		throw()
+		if Game.tomato > 0:
+			throw()
+			
 		
 
 		
@@ -34,6 +35,7 @@ func throw():
 	
 	owner.add_child(t)
 	t.global_transform.origin = global_position	
+	Game.tomato -= 1
 	
 
 	#velocity = direction * SPEED
@@ -84,6 +86,10 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
+	if Game.playerHP <= 0:
+		queue_free()
+		get_tree().change_scene_to_file("res://Scenes/UI/Menus/main_menu.tscn")
+		
 	move_and_slide()
 	update_animation()
 	update_facing_direction()
