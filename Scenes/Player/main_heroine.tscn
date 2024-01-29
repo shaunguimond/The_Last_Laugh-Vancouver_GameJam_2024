@@ -1,8 +1,8 @@
 [gd_scene load_steps=52 format=3 uid="uid://647kjmdprsuu"]
 
 [ext_resource type="Script" path="res://Scenes/Player/main_heroine.gd" id="1_ekpr1"]
-[ext_resource type="Texture2D" uid="uid://xf6x6gsyjhhi" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper/transparent.png" id="2_h54mq"]
-[ext_resource type="Texture2D" uid="uid://dkgv3nmf0122l" path="res://Assets/Extra Assets/Elementals_metal_bladekeeper/transparent_roll.png" id="3_a47xh"]
+[ext_resource type="Texture2D" uid="uid://xf6x6gsyjhhi" path="res://Assets/Extra Assets/kenney_platformer-art-deluxe/Elementals_metal_bladekeeper/transparent.png" id="2_h54mq"]
+[ext_resource type="Texture2D" uid="uid://dkgv3nmf0122l" path="res://Assets/Extra Assets/kenney_platformer-art-deluxe/Elementals_metal_bladekeeper/transparent_roll.png" id="3_a47xh"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="38_1i45q"]
 [ext_resource type="Resource" uid="uid://euybd2w0bax" path="res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera2DTween.tres" id="39_lvp0m"]
 

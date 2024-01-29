@@ -22,13 +22,13 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 0.1,
+"duration": 0.3,
 "texture": ExtResource("1_27vhn")
 }, {
-"duration": 0.5,
+"duration": 0.3,
 "texture": ExtResource("2_12cx0")
 }, {
-"duration": 0.6,
+"duration": 0.3,
 "texture": ExtResource("3_02872")
 }],
 "loop": false,
